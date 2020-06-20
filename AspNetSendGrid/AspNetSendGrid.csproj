@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageProjectUrl>https://hildenco.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hd9/aspnet-sendgrid</RepositoryUrl>
+    <Description>ASP.NET Core website demoing SendGrid, Azure and ASP.NET Core best practices.</Description>
+    <Copyright>MIT</Copyright>
+    <Company>HildenCo</Company>
+    <Authors>Bruno Hildenbrand</Authors>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

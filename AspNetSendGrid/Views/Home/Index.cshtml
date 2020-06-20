@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var error = (string)TempData["Error"];
+    var success = (string)TempData["Success"];
+}
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-lg-8">
+        <h2>Sending emails using SendGrid and Azure</h2>
+        <p class="lead">Learn more at: <a href="https://blog.hildenco.com">blog.hildenco.com</a></p>
+
+        @if (!string.IsNullOrEmpty(error))
+        {
+            <div class="alert-danger p-3 my-4 rounded">@error</div>
+        }
+        else if (!string.IsNullOrEmpty(success))
+        {
+            <div class="alert-primary p-3 my-4 rounded">@success</div>
+        }
+
+        <partial name="_Newsletter" />
+    </div>
+</div>

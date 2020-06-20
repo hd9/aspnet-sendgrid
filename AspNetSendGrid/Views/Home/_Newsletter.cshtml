@@ -1,0 +1,23 @@
+﻿@using AspNetSendGrid.Models;
+@model NewsletterSignup
+
+<form method="post" asp-action="Create" asp-controller="Home">
+    <div class="bg-light p-3 mt-2">
+        <h4 class="border-bottom py-2">Newsletter</h4>
+        <div>
+            <p>Want to subscribe to our newsletter?</p>
+            <div class="my-2">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Name</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Enter your name" asp-for="Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control form-control-sm" placeholder="Enter your email" aria-describedby="emailHelp" asp-for="Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone 😊.</small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
